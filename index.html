@@ -1,146 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Understanding REST APIs | Rareone Blog</title>
+    <title>Understanding REST APIs | Rareone Blog</title>
 
-<style>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f6fb;
+        line-height: 1.6;
+      }
 
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f6fb;
-    line-height:1.6;
-}
+      header {
+        background: #0a192f;
+        color: white;
+        padding: 20px 60px;
+      }
 
-header{
-    background:#0a192f;
-    color:white;
-    padding:20px 60px;
-}
+      header h1 {
+        margin: 0;
+      }
 
-header h1{
-    margin:0;
-}
+      .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px 20px;
+      }
 
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
-}
+      .article {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+      }
 
-.article{
-    background:white;
-    padding:40px;
-    border-radius:8px;
-    box-shadow:0 3px 12px rgba(0,0,0,0.08);
-}
+      .article h1 {
+        margin-top: 0;
+        font-size: 32px;
+      }
 
-.article h1{
-    margin-top:0;
-    font-size:32px;
-}
+      .meta {
+        color: #777;
+        margin-bottom: 25px;
+      }
 
-.meta{
-    color:#777;
-    margin-bottom:25px;
-}
+      .article h2 {
+        margin-top: 30px;
+      }
 
-.article h2{
-    margin-top:30px;
-}
+      .code {
+        background: #f1f1f1;
+        padding: 15px;
+        border-radius: 5px;
+        font-family: monospace;
+      }
 
-.code{
-    background:#f1f1f1;
-    padding:15px;
-    border-radius:5px;
-    font-family:monospace;
-}
+      footer {
+        text-align: center;
+        background: #0a192f;
+        color: white;
+        padding: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
 
-footer{
-    text-align:center;
-    background:#0a192f;
-    color:white;
-    padding:20px;
-    margin-top:40px;
-}
+  <body>
+    <header>
+      <h1>Rareone Tech Blog</h1>
+    </header>
 
-</style>
+    <div class="container">
+      <div class="article">
+        <h1>Understanding REST APIs in Modern Backend Development</h1>
 
-</head>
+        <p class="meta">Published on March 2026 • 5 min read</p>
 
-<body>
+        <p>
+          REST APIs form the backbone of modern web applications. They enable
+          communication between frontend interfaces and backend services in a
+          scalable and standardized manner. In enterprise systems, RESTful
+          services are widely used to expose business functionality to multiple
+          clients such as web applications, mobile apps, and third-party
+          integrations.
+        </p>
 
-<header>
-<h1>Rareone Tech Blog</h1>
-</header>
+        <h2>What is a REST API?</h2>
 
-<div class="container">
+        <p>
+          REST (Representational State Transfer) is an architectural style used
+          for designing networked applications. It relies on standard HTTP
+          methods such as GET, POST, PUT, and DELETE to perform operations on
+          resources.
+        </p>
 
-<div class="article">
+        <h2>Common HTTP Methods</h2>
 
-<h1>Understanding REST APIs in Modern Backend Development</h1>
+        <ul>
+          <li><b>GET</b> – Retrieve data from the server</li>
+          <li><b>POST</b> – Create a new resource</li>
+          <li><b>PUT</b> – Update an existing resource</li>
+          <li><b>DELETE</b> – Remove a resource</li>
+        </ul>
 
-<p class="meta">Published on March 2026 • 5 min read</p>
+        <h2>Example REST Endpoint</h2>
 
-<p>
-REST APIs form the backbone of modern web applications. They enable communication between frontend interfaces and backend services in a scalable and standardized manner. In enterprise systems, RESTful services are widely used to expose business functionality to multiple clients such as web applications, mobile apps, and third-party integrations.
-</p>
+        <div class="code">GET /api/users/1</div>
 
-<h2>What is a REST API?</h2>
+        <p>
+          This endpoint retrieves the user whose ID is 1 from the backend
+          system. The server typically returns the response in JSON format.
+        </p>
 
-<p>
-REST (Representational State Transfer) is an architectural style used for designing networked applications. It relies on standard HTTP methods such as GET, POST, PUT, and DELETE to perform operations on resources.
-</p>
+        <h2>Example JSON Response</h2>
 
-<h2>Common HTTP Methods</h2>
+        <div class="code">
+          { "id": 1, "name": "John Doe", "email": "john@example.com" }
+        </div>
 
-<ul>
-<li><b>GET</b> – Retrieve data from the server</li>
-<li><b>POST</b> – Create a new resource</li>
-<li><b>PUT</b> – Update an existing resource</li>
-<li><b>DELETE</b> – Remove a resource</li>
-</ul>
+        <h2>Why REST APIs are Important</h2>
 
-<h2>Example REST Endpoint</h2>
+        <p>
+          REST APIs promote loose coupling between systems, making applications
+          easier to scale and maintain. Frameworks such as Spring Boot allow
+          developers to quickly build production-ready REST services with
+          minimal configuration.
+        </p>
 
-<div class="code">
-GET /api/users/1
-</div>
+        <p>
+          For backend engineers, understanding REST API design principles is
+          essential for building reliable and maintainable enterprise
+          applications.
+        </p>
+      </div>
+    </div>
 
-<p>
-This endpoint retrieves the user whose ID is 1 from the backend system. The server typically returns the response in JSON format.
-</p>
-
-<h2>Example JSON Response</h2>
-
-<div class="code">
-{
-  "id": 1,
-  "name": "John Doe",
-  "email": "john@example.com"
-}
-</div>
-
-<h2>Why REST APIs are Important</h2>
-
-<p>
-REST APIs promote loose coupling between systems, making applications easier to scale and maintain. Frameworks such as Spring Boot allow developers to quickly build production-ready REST services with minimal configuration.
-</p>
-
-<p>
-For backend engineers, understanding REST API design principles is essential for building reliable and maintainable enterprise applications.
-</p>
-
-</div>
-
-</div>
-
-<footer>
-<p>© 2026 Rareone | Tech Blog</p>
-</footer>
-
-</body>
+    <footer>
+      <p>© 2026 Rareone | Tech Blog</p>
+    </footer>
+  </body>
 </html>
